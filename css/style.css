@@ -1,0 +1,1501 @@
+* {
+  box-sizing: border-box;
+}
+
+.firecon-multi-btn {
+  all: initial;
+  zoom: .7;
+  position: fixed;
+  bottom: 10vw;
+  right: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  animation: rootAppear 0.5s;
+  z-index: 1000;
+
+}
+
+.firecon-multi-btn.less-3 {
+  zoom: .9 !important;
+  bottom: 5vw !important;
+  right: 5vw !important;
+}
+
+@keyframes rootAppear {
+  0% {
+    transform: translateY(30vh);
+  }
+}
+
+.firecon-multi-btn__button {
+  position: relative;
+  z-index: 1000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 7vw;
+  height: 7vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FF9900;
+  border-radius: 100vw;
+  outline: 5vw solid floralwhite;
+  border: 0;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  outline: 5vw solid floralwhite;
+}
+
+.firecon-multi-btn__button::before {
+  position: absolute;
+  content: '';
+  display: block;
+  outline: 5px solid #FF9900;
+  z-index: 100;
+  width: 17vw;
+  height: 17vw;
+  border-radius: 100vw;
+  -webkit-animation: waves 3s infinite;
+          animation: waves 3s infinite;
+}
+
+.firecon-multi-btn.less-3 .firecon-multi-btn__button._cross {
+  animation: none !important;
+}
+.firecon-multi-btn.less-3 .firecon-multi-btn__button {
+  -webkit-animation: waves 3s infinite;
+          animation: waves 3s infinite;
+}
+
+.firecon-multi-btn.less-3 
+.firecon-multi-btn__button::before {
+  display: none !important;
+}
+
+.firecon-multi-btn__button 
+.firecon-multy-btn__cross-icon {
+  display: none;
+}
+
+.firecon-multi-btn__button._cross {
+  -webkit-animation: none;
+  animation: none;
+  background-color: floralwhite !important;
+}
+
+.firecon-multi-btn.less-3 
+.firecon-multi-btn__button {
+  outline: transparent !important;
+}
+
+.firecon-multi-btn__button._cross 
+.firecon-multy-btn__phone-icon {
+  display: none;
+}
+
+.firecon-multi-btn__button._cross 
+.firecon-multy-btn__cross-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(3);
+  font-family: 'Open Sans';
+}
+
+.firecon-multi-btn.less-3 
+.firecon-multi-btn__button._cross 
+.firecon-multy-btn__cross-icon {
+  transform: none !important;
+}
+
+.firecon-multi-btn__button._cross 
+.firecon-multy-btn__cross-icon img {
+  width: 3vw;
+}
+
+.firecon-multi-btn__button:hover {
+  background: #ff8400;
+}
+
+@-webkit-keyframes waves {
+  0% {
+    -webkit-box-shadow: 0 0 0 0px #ff99005a;
+            box-shadow: 0 0 0 0px #ff99005a;
+  }
+  90% {
+    -webkit-box-shadow: 0 0 0 40px #ff990000;
+            box-shadow: 0 0 0 40px #ff990000;
+  }
+}
+
+@keyframes waves {
+  0% {
+    -webkit-box-shadow: 0 0 0 0px #ff99005a;
+            box-shadow: 0 0 0 0px #ff99005a;
+  }
+  90% {
+    -webkit-box-shadow: 0 0 0 40px #ff990000;
+            box-shadow: 0 0 0 40px #ff990000;
+  }
+}
+
+.firecon-multi-btn__button .firecon-multy-btn__phone-icon {
+  width: 3vw;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-animation: shake 4.5s infinite;
+          animation: shake 4.5s infinite;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  5% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  10% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  15% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  20% {
+    -webkit-transform: rotate(0deg) scale(120%);
+            transform: rotate(0deg) scale(120%);
+  }
+  25% {
+    -webkit-transform: rotate(0deg) scale(100%);
+            transform: rotate(0deg) scale(100%);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  5% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  10% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  15% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  20% {
+    -webkit-transform: rotate(0deg) scale(120%);
+            transform: rotate(0deg) scale(120%);
+  }
+  25% {
+    -webkit-transform: rotate(0deg) scale(100%);
+            transform: rotate(0deg) scale(100%);
+  }
+}
+
+.firecon-multi-btn__contacts {
+  position: relative !important;
+  margin-right: -7vw;
+  padding-top: 0.6vw;
+}
+
+.firecon-multi-btn.less-3 .firecon-multi-btn__contacts {
+  margin: 0 !important;
+  position: absolute;
+  transition: 0.1s;
+  top: 200px;
+  opacity: 0;
+}
+.firecon-multi-btn.less-3 
+.firecon-multi-btn__contacts._active {
+  display: block;
+  transition: 0.5s;
+  top: 0px;
+  opacity: 1;
+}
+
+.firecon-multi-btn__contacts button {
+  transition: 0.3s;
+}
+.firecon-multi-btn__contacts._active button {
+  transition: 0.3s;
+}
+.firecon-multi-btn__contacts._active button:nth-child(1){
+  position: absolute;
+  top: -11.5vw !important;
+  right: -0.5vw !important;
+}
+.firecon-multi-btn__contacts._active button:nth-child(2){
+  position: absolute;
+  top: -11vw !important;
+  right: 5vw !important;
+}
+.firecon-multi-btn__contacts._active button:nth-child(3){
+  position: absolute;
+  top: -8.3vw !important;
+  right: 9.8vw !important;
+}
+.firecon-multi-btn__contacts._active button:nth-child(4){
+  position: absolute;
+  top: -3.2vw !important;
+  right: 12.7vw !important;
+}
+.firecon-multi-btn__contacts._active button:nth-child(5){
+  position: absolute;
+  top: 2.3vw !important;
+  right: 13.2vw !important;
+}
+.firecon-multi-btn__contacts._active button:nth-child(6){
+  position: absolute;
+  top: 7.5vw !important;
+  right: 11.4vw !important;
+}
+.firecon-multi-btn__contacts._active button:nth-child(7){
+  position: absolute;
+  top: -9.7vw !important;
+  right: -5.7vw !important;
+}
+.firecon-multi-btn__contacts.contacts-7._active button:nth-child(1){
+  position: absolute;
+  top: -9.7vw !important;
+  right: -5.7vw !important;
+}
+.firecon-multi-btn__contacts.contacts-7._active button:nth-child(2){
+  position: absolute;
+  top: 7.5vw !important;
+  right: 11.4vw !important;
+}
+.firecon-multi-btn__contacts.contacts-7._active button:nth-child(3){
+  position: absolute;
+  top: 2.3vw !important;
+  right: 13.2vw !important;
+}
+.firecon-multi-btn__contacts.contacts-7._active button:nth-child(4){
+  position: absolute;
+  top: -3.2vw !important;
+  right: 12.7vw !important;
+}
+.firecon-multi-btn__contacts.contacts-7._active button:nth-child(5){
+  position: absolute;
+  top: -11vw !important;
+  right: 5vw !important;
+}
+.firecon-multi-btn__contacts.contacts-7._active button:nth-child(6){
+  position: absolute;
+  top: -8.3vw !important;
+  right: 9.8vw !important;
+}
+.firecon-multi-btn__contacts.contacts-7._active button:nth-child(7){
+  position: absolute;
+  top: -11.5vw !important;
+  right: -0.5vw !important;
+}
+
+.firecon-multi-btn.less-3 
+.firecon-multi-btn__contacts._active button:nth-child(1) {
+  position: relative !important;
+  right: 0 !important;
+  top: -0.1vw !important;
+}
+
+.firecon-multi-btn.less-3 
+.firecon-multi-btn__contacts._active button:nth-child(2) {
+  position: relative !important;
+  right: 0 !important;
+  top: -0.1vw !important;
+}
+
+.firecon-multi-btn.less-3 
+.firecon-multi-btn__contacts._active button:nth-child(3) {
+  position: relative !important;
+  right: 0 !important;
+  top: -0.1vw !important;
+}
+
+
+
+.firecon-multi-btn__contacts-item {
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 100vw;
+  border: 0;
+  margin-top: 1vw;
+  cursor: pointer;
+  -webkit-animation: appear 0.4s;
+          animation: appear 0.4s;
+  background: transparent;
+  color: black;
+}
+
+.firecon-multi-btn__contacts-item {
+  pointer-events: none;
+}
+.firecon-multi-btn__contacts._active
+.firecon-multi-btn__contacts-item {
+  pointer-events: all;
+}
+/* 
+.firecon-multi-btn__contacts.contacts-2 button:nth-child(1) {
+  position: absolute;
+  top: -3vw;
+  right: -4.2vw;
+}
+
+.firecon-multi-btn__contacts.contacts-2 button:nth-child(2) {
+  position: absolute;
+  top: -3vw;
+  right: 6.3vw;
+}
+
+
+.firecon-multi-btn__contacts.contacts-3 button:nth-child(1) {
+  position: absolute;
+  top: -3vw;
+  right: -4.2vw;
+}
+
+.firecon-multi-btn__contacts.contacts-3 button:nth-child(2) {
+  position: absolute;
+  top: -3vw;
+  right: 6.3vw;
+}
+
+.firecon-multi-btn__contacts.contacts-3 button:nth-child(3) {
+  position: absolute;
+  top: 7vw;
+  right: 1vw;
+} */
+
+@-webkit-keyframes appear {
+  0% {
+    width: 1vw;
+  }
+}
+
+@keyframes appear {
+  0% {
+    width: 1vw;
+  }
+}
+
+.firecon-multi-btn__contacts.contacts-4 button:nth-child(1) {
+  position: absolute;
+  top: -3vw;
+  right: -3.8vw;
+}
+
+.firecon-multi-btn__contacts.contacts-4 button:nth-child(2) {
+  position: absolute;
+  top: -3vw;
+  right: 5.8vw;
+}
+
+.firecon-multi-btn__contacts.contacts-4 button:nth-child(3) {
+  position: absolute;
+  top: 4.5vw;
+  right: 5.8vw;
+}
+
+.firecon-multi-btn__contacts.contacts-4 button:nth-child(4) {
+  position: absolute;
+  top: 4.5vw;
+  right: -3.8vw;
+}
+
+.firecon-multi-btn__contacts.contacts-5 button:nth-child(1) {
+  position: absolute;
+  top: -4vw;
+  right: -3.2vw;
+}
+
+.firecon-multi-btn__contacts.contacts-5 button:nth-child(2) {
+  position: absolute;
+  top: -4vw;
+  right: 5.1vw;
+}
+
+.firecon-multi-btn__contacts.contacts-5 button:nth-child(3) {
+  position: absolute;
+  top: 3vw;
+  right: 6.5vw;
+}
+
+.firecon-multi-btn__contacts.contacts-5 button:nth-child(4) {
+  position: absolute;
+  top: 3vw;
+  right: -4.3vw;
+}
+
+.firecon-multi-btn__contacts.contacts-5 button:nth-child(5) {
+  position: absolute;
+  top: 6.5vw;
+  right: 1vw;
+}
+
+.firecon-multi-btn__contacts.contacts-5 button {
+  width: 5vw;
+  height: 5vw;
+  -webkit-animation: apear 0.4s;
+          animation: apear 0.4s;
+}
+
+@keyframes apear {
+  0% {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.firecon-multi-btn__contacts.contacts-6 button:nth-child(1) {
+  position: absolute;
+  top: -2.8vw;
+  right: -3.9vw;
+}
+
+.firecon-multi-btn__contacts.contacts-6 button:nth-child(2) {
+  position: absolute;
+  top: -2.8vw;
+  right: 5.9vw;
+}
+
+.firecon-multi-btn__contacts.contacts-6 button:nth-child(3) {
+  position: absolute;
+  top: 4vw;
+  right: 6.1vw;
+}
+
+.firecon-multi-btn__contacts.contacts-6 button:nth-child(4) {
+  position: absolute;
+  top: 4vw;
+  right: -3.9vw;
+}
+
+.firecon-multi-btn__contacts.contacts-6 button:nth-child(5) {
+  position: absolute;
+  top: 6.5vw;
+  right: 1vw;
+}
+
+.firecon-multi-btn__contacts.contacts-6 button:nth-child(6) {
+  position: absolute;
+  top: -5.2vw;
+  right: 1vw;
+}
+
+.firecon-multi-btn__contacts.contacts-6 button {
+  width: 5vw;
+  height: 5vw;
+  -webkit-animation: apear 0.4s;
+          animation: apear 0.4s;
+}
+
+@keyframes apear {
+  0% {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.firecon-multi-btn__contacts.contacts-7 button:nth-child(1) {
+  position: absolute;
+  top: -3.2vw;
+  right: -3.6vw;
+}
+
+.firecon-multi-btn__contacts.contacts-7 button:nth-child(2) {
+  position: absolute;
+  top: -3.2vw;
+  right: 5.7vw;
+}
+
+.firecon-multi-btn__contacts.contacts-7 button:nth-child(3) {
+  position: absolute;
+  top: 6vw;
+  right: 3.6vw;
+}
+
+.firecon-multi-btn__contacts.contacts-7 button:nth-child(4) {
+  position: absolute;
+  top: 2vw;
+  right: -4.7vw;
+}
+
+.firecon-multi-btn__contacts.contacts-7 button:nth-child(5) {
+  position: absolute;
+  top: 2vw;
+  right: 6.8vw;
+}
+
+.firecon-multi-btn__contacts.contacts-7 button:nth-child(6) {
+  position: absolute;
+  top: -5.3vw;
+  right: 1vw;
+}
+
+.firecon-multi-btn__contacts.contacts-7 button:nth-child(7) {
+  position: absolute;
+  top: 6vw;
+  right: -1.6vw;
+}
+
+.firecon-multi-btn__contacts.contacts-7 button {
+  width: 5vw;
+  height: 5vw;
+  -webkit-animation: apear 0.4s;
+          animation: apear 0.4s;
+}
+
+@keyframes apear {
+  0% {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.firecon-multi-btn__contacts-icon {
+  width: 75%;
+}
+
+
+.firecon-phone-popup {
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(240, 240, 240, 0.488);
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+
+.firecon-phone-popup form {
+  position: relative;
+  background: white;
+  width: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 15px;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-box-shadow: 0 0 30px #f0f0f0;
+          box-shadow: 0 0 30px #f0f0f0;
+}
+
+.firecon-phone-popup form .cross {
+  position: absolute;
+  right: -30px;
+  top: -40px;
+  font-size: 42px;
+  font-weight: 300;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.firecon-phone-popup form .cross:hover {
+  opacity: 0.5;
+}
+
+.firecon-phone-popup form p {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.firecon-phone-popup form input {
+  font-size: 18px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  border: 1px solid #ECECEC;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+.firecon-phone-popup form input:focus {
+  border: 1px solid #FF9900;
+}
+
+.firecon-phone-popup form button {
+  font-weight: 600;
+  color: white;
+  font-size: 18px;
+  background: #FF9900;
+  outline: none;
+  border: none;
+  padding: 20px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.firecon-phone-popup form button:hover {
+  background: #e88c03;
+}
+.whatsapp-imitation {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(240, 240, 240, 0.488);
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.whatsapp-imitation__input:focus {
+  outline: 0;
+}
+.whatsapp-imitation-messenger {
+  width: 375px;
+  position: relative;
+  border-radius: 10px;
+  height: 667px;
+  background-image: url(../img/whatsappbg.png);
+}
+
+.whatsapp-imitation-messenger .cross {
+  position: absolute;
+  right: -30px;
+  top: -40px;
+  font-size: 42px;
+  font-weight: 300;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+.whatsapp-imitation__header {
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 60px;
+  width: 100%;
+  background-color: #0b5c56;
+}
+.whatsapp-imitation__header-logo {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 200px;
+  margin-top: 2.5%;
+  top: 0;
+  left: 3%;
+}
+.whatsapp-imitation__header-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  height: 100%;
+}
+.whatsapp-imitation__header-text p {
+  line-height: 25px;
+  margin: 0;
+  color: #dcffff;
+}
+.whatsapp-imitation__header-name {
+  font-weight: 500;
+  margin-top: 1% !important;
+  margin-bottom: 2px !important;
+  font-size: 18px;
+}
+.whatsapp-imitation__messages {
+  position: absolute;
+  bottom: 12%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.whatsapp-imitation__message {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  bottom: 12%;
+  left: 2%;
+  width: 50%;
+  padding: 3px 7px 7px 7px !important;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0px;
+}
+.whatsapp-imitation__message p {
+  margin: 0;
+}
+.whatsapp-imitation__message-text {
+  color: #242424 !important;
+  line-height: 25px !important;
+}
+.whatsapp-imitation__message-time {
+  align-self: flex-end;
+  margin-left: 10px !important;
+  margin-top: 15px !important;
+  font-size: 10px;
+  color: #b7b7b7;
+}
+.whatsapp-imitation__answers {
+  margin-top: 30px;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+.whatsapp-imitation__answers-answer {
+  margin-top: 7px;
+  margin-right: 7px;
+  padding: 7px;
+  border: 3px solid #0378724f;
+  background-color: #fff;
+  color: #242424;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.whatsapp-imitation__input {
+  position: absolute;
+  bottom: 1%;
+  width: 80% !important;
+  height: 60px;
+  background-color: white;
+  border-radius: 200px;
+  margin-bottom: 0 !important;
+  border: 0 !important;
+  box-shadow: 0 0 10px #d4d4d4;
+  left: 1%;
+  padding-left: 15px !important;
+  font-size: 16px;
+}
+
+.whatsapp-imitation__button {
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  border-radius: 2000px;
+  width: 16%;
+  border: 0;
+  height: 60px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px #d4d4d4;
+  background-color: #037872;
+}
+.whatsapp-imitation__button img {
+  width: 30px;
+  margin-left: 3px;
+  height: 30px;
+  transform: rotate(90deg);
+}
+.whatsapp-imitation-form {
+  position: absolute;
+  z-index: 1000;
+  background-color: #d1d1d194;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whatsapp-imitation-form p {
+  text-align: center;
+  margin: 0;
+}
+.whatsapp-imitation-form__block {
+  position: relative;
+  opacity: 2;
+  width: 80%;
+  height: 200px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.whatsapp-imitation-form__block p {
+  line-height: 24px !important;
+}
+.whatsapp-imitation-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.whatsapp-imitation-form__text-header {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px !important;
+  margin-bottom: 10px !important;
+}
+.whatsapp-imitation-form__text-ph {
+  line-height:18px !important;
+  font-size: 16px;
+}
+.whatsapp-imitation-form__input {
+  border: 0;
+  height: 40px;
+  width: 70%;
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 20px 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid;
+}
+.whatsapp-imitation-form button {
+  height: 45px;
+  width: 50%;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  padding: 0 !important;
+  font-size: 16px;
+  background-color:#0b5c56;
+  cursor: pointer;
+}
+.whatsapp-imitation-form .cross-form {
+  position: absolute;
+  right: -30px;
+  top: -40px;
+  font-size: 42px;
+  font-weight: 300;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+.whatsapp-imitation-form-success {
+  position: absolute;
+  z-index: 10000;
+  background-color: #d1d1d194;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whatsapp-imitation-form-success__block {
+  position: relative;
+  width: 80%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.whatsapp-imitation-form-success__text {
+  font-size: 20px;
+  text-align: center;
+}
+.whatsapp-imitation-form-success .cross-form-success {
+  position: absolute;
+  right: -30px;
+  top: -40px;
+  font-size: 42px;
+  font-weight: 300;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.viber-imitation {
+  font-family:Arial, Helvetica, sans-serif;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(240, 240, 240, 0.488);
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.viber-imitation__input:focus {
+  outline: 0;
+}
+.viber-imitation-messenger {
+  width: 375px;
+  position: relative;
+  border-radius: 10px;
+  height: 667px;
+  background-color: #fff;
+}
+
+.viber-imitation-messenger .cross {
+  position: absolute;
+  right: -30px;
+  top: -40px;
+  font-size: 42px;
+  font-weight: 300;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+.viber-imitation__header {
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #a4a4a4;
+  background-color: #fff;
+}
+.viber-imitation__header-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  height: 100%;
+}
+.viber-imitation__header-text p {
+  line-height: 25px;
+  margin: 0;
+  color: black;
+}
+.viber-imitation__header-name {
+  font-weight: 500;
+  margin-top: 2% !important;
+  font-size: 18px;
+}
+.viber-imitation__header-status {
+  color: #3e3e3e !important;
+}
+.viber-imitation__messages {
+  position: absolute;
+  bottom: 12%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.viber-imitation__message {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  bottom: 16%;
+  left: 2%;
+  width: 60%;
+  padding: 5px 9px 9px 9px !important;
+  background-color: #dfe0e2;
+  border-radius: 5px;
+  padding: 0px;
+}
+.viber-imitation__message p {
+  margin: 0;
+}
+.viber-imitation__message-text {
+  color: #242424;
+  line-height: 25px !important;
+}
+.viber-imitation__message-time {
+  margin-left: 10px !important;
+  margin-top: 15px !important;
+  font-size: 10px;
+  color: #b7b7b7;
+}
+.viber-imitation__answers {
+  margin-top: 30px;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+.viber-imitation__answers-answer {
+  margin-top: 7px;
+  margin-right: 7px;
+  padding: 7px;
+  border: 3px solid #cce2fa;
+  background-color: #fff;
+  color: #242424;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.viber-imitation__input {
+  position: absolute;
+  bottom: 1%;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 0 !important;
+  background-color: white !important;
+  border: 0 !important;
+  border-top: 1px solid #c6c6c694;
+  padding-left: 15px !important;
+  font-size: 16px;
+}
+
+.viber-imitation__button {
+  position: absolute;
+  bottom: 0.4%;
+  right: 1%;
+  border-radius: 2000px;
+  width: 16%;
+  border: 0;
+  height: 60px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px #d4d4d4;
+  background-color: #7360f2;
+}
+.viber-imitation__button img {
+  width: 30px;
+  margin-left: 3px;
+  height: 30px;
+  transform: rotate(90deg);
+}
+.viber-imitation-form {
+  position: absolute;
+  z-index: 1000;
+  background-color: #d1d1d194;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.viber-imitation-form p {
+  text-align: center;
+  margin: 0;
+}
+.viber-imitation-form__block {
+  position: relative;
+  opacity: 2;
+  width: 80%;
+  height: 200px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.viber-imitation-form__block p {
+  line-height: 24px !important;
+}
+.viber-imitation-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.viber-imitation-form__text-header {
+  line-height: 22px !important;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px !important;
+  line-height: 23px !important;
+}
+.viber-imitation-form__text-ph {
+  line-height: 18px !important;
+  font-size: 16px;
+}
+.viber-imitation-form__input {
+  border: 0;
+  height: 40px;
+  width: 70%;
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 20px 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid;
+}
+.viber-imitation-form button {
+  height: 45px;
+  width: 50%;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  padding: 0 !important;
+  font-size: 16px;
+  background-color:#7360f2;
+  cursor: pointer;
+}
+.viber-imitation-form .cross-form {
+  position: absolute;
+  right: -30px;
+  top: -40px;
+  font-size: 42px;
+  font-weight: 300;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+.viber-imitation-form-success {
+  position: absolute;
+  z-index: 10000;
+  background-color: #d1d1d194;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.viber-imitation-form-success__block {
+  position: relative;
+  width: 80%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.viber-imitation-form-success__text {
+  font-size: 20px;
+  text-align: center;
+}
+.viber-imitation-form-success .cross-form-success {
+  position: absolute;
+  right: -30px;
+  top: -40px;
+  font-size: 42px;
+  font-weight: 300;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+.telegram-imitation {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(240, 240, 240, 0.488);
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.telegram-imitation__input:focus {
+  outline: 0;
+}
+.telegram-imitation-messenger {
+  width: 375px;
+  position: relative;
+  border-radius: 10px;
+  height: 667px;
+  background-image: url(../img/telegram-bg.jpg);
+}
+
+.telegram-imitation-messenger .cross {
+  position: absolute;
+  right: -30px;
+  top: -40px;
+  font-size: 42px;
+  font-weight: 300;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+}
+.telegram-imitation__header {
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #d8d8d8;
+  background-color: #ffffff;
+}
+.telegram-imitation__header-logo {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 200px;
+  margin-top: 2.5%;
+  top: 0;
+  left: 3%;
+}
+.telegram-imitation__header-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  height: 25px;
+}
+.telegram-imitation__header-text p {
+  line-height: 25px;
+  margin: 0;
+  color: rgb(37, 37, 37) !important;
+}
+.telegram-imitation__header-name {
+  font-weight: 500;
+  margin-top: 2% !important;
+  font-size: 18px;
+}
+.telegram-imitation__header-status {
+  color: #7b7b7b !important;
+}
+.telegram-imitation__messages {
+  position: absolute;
+  bottom: 12%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.telegram-imitation__message {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  bottom: 16%;
+  left: 2%;
+  width: 60%;
+  padding: 5px 9px 9px 9px !important;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 0px;
+}
+.telegram-imitation__message p {
+  margin: 0;
+}
+.telegram-imitation__message-text {
+  color: #242424 !important;
+  line-height: 25px !important;
+}
+.telegram-imitation__message-time {
+  margin-left: 10px !important;
+  margin-top: 15px !important;
+  font-size: 11px;
+  color: #78b971!important;
+}
+.telegram-imitation__answers {
+  margin-top: 30px;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+.telegram-imitation__answers-answer {
+  margin-top: 7px;
+  margin-right: 7px;
+  padding: 7px;
+  border: 3px solid rgb(224, 255, 187); 
+  background-color: rgb(239,254,221) !important;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #242424 !important;
+}
+.telegram-imitation__input {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 0px !important;
+  background-color: #ffffff !important;
+  border: 0 !important;
+  padding-left: 15px !important;
+  font-size: 14px;
+  border-radius: 10px;
+  color: rgb(50, 50, 50) !important;
+}
+
+.telegram-imitation__button {
+  position: absolute;
+  z-index: 90;
+  bottom: 0;
+  right: 0;
+  width: 16%;
+  padding: 0;
+  border: 0;
+  height: 60px;
+  background-color: #ffffff !important;
+  cursor: pointer;
+}
+.telegram-imitation__button img {
+  width: 30px;
+  margin-left: 3px;
+  height: 30px;
+  transform: rotate(90deg);
+  fill: darkgreen;
+}
+.telegram-imitation-form {
+  position: absolute;
+  z-index: 1000;
+  background-color: #cacaca94;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.telegram-imitation-form p {
+  text-align: center;
+  margin: 0;
+  color: rgb(67, 67, 67) !important;
+}
+.telegram-imitation-form__block {
+  position: relative;
+  opacity: 2;
+  width: 80%;
+  height: 200px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgb(216, 216, 216) !important;
+  display: flex;
+  flex-direction: column;
+}
+.telegram-imitation-form__block p {
+  line-height: 24px !important;
+}
+.telegram-imitation-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.telegram-imitation-form__text-header {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px !important;
+  margin-bottom: 10px !important;
+}
+.telegram-imitation-form__text-ph {
+  line-height: 18px !important;
+  font-size: 16px;
+}
+.telegram-imitation-form__input {
+  border: 0;
+  height: 40px;
+  width: 70%;
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 20px 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid;
+}
+.telegram-imitation-form button {
+  height: 45px;
+  width: 50%;
+  border-radius: 30px;
+  color: rgb(255, 255, 255) !important;
+  border: none;
+  font-size: 16px;
+  padding: 0 !important;
+  background-color:#bababa;
+  cursor: pointer;
+}
+.telegram-imitation-form .cross-form {
+  position: absolute;
+  right: -30px;
+  top: -40px;
+  font-size: 42px;
+  font-weight: 300;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+  color: rgb(162, 162, 162) !important;
+}
+.telegram-imitation-form-success {
+  position: absolute;
+  z-index: 10000;
+  background-color: #53535394;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.telegram-imitation-form-success__block {
+  position: relative;
+  width: 80%;
+  height: 100px;
+  background-color: rgb(201, 201, 201);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.telegram-imitation-form-success__text {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(16, 16, 16) !important;
+}
+.telegram-imitation-form-success .cross-form-success {
+  position: absolute;
+  right: -30px;
+  top: -40px;
+  font-size: 42px;
+  font-weight: 300;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+  color: rgb(87, 87, 87) !important;
+}
+.firecon-notice {
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.firecon-notice.warn {
+  background: rgb(244, 89, 89);
+  color: rgb(186, 62, 62);
+}
+
+.firecon-notice.success {
+  background: rgb(154, 244, 89);
+  color: rgb(61, 147, 56);
+}
+/*# sourceMappingURL=style.css.map */
